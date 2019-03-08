@@ -1,11 +1,10 @@
-﻿using CK.SqlServer;
-using Dapper;
-using FluentAssertions;
-using NUnit.Framework;
-using System;
+﻿using System;
 using System.Threading.Tasks;
-
+using CK.SqlServer;
+using NUnit.Framework;
+using FluentAssertions;
 using static CK.Testing.DBSetupTestHelper;
+using Dapper;
 
 namespace SEC.Data.Tests
 {
