@@ -14,6 +14,6 @@
         /// Culture <see cref="Data.Language.Code"/> or what
         /// truly identifies the unique <see cref="ICulture"/>.
         /// </summary>
-        int Language { get; set; }
+        int LanguageCode { get; set; }
     }
 }

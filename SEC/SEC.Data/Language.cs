@@ -15,6 +15,12 @@ namespace SEC.Data
         /// Matching code (English is 0 by default).
         /// </summary>
         public int Code { get; set; }
+
+        /// <summary>
+        /// Creates a new <see cref="Language"/>.
+        /// </summary>
+        /// <param name="code">See <see cref="Code"/>.</param>
+        public Language(int code) => Code = code;
     }
     
     /// <summary>
@@ -34,7 +40,7 @@ namespace SEC.Data
         public LanguageLister()
             => Languages = new Dictionary<string, Language>
             {
-                { "English", new Language() { Code = 1 } }
+                { "English", new Language(1) }
             };
     }
 }
