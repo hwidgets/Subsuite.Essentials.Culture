@@ -14,12 +14,6 @@ namespace SEC.Data.Tests
     {
         private const int systemId = 1;
 
-        private class StdCultureInfo : ICulture
-        {
-            public int CultureId { get; set; } = -1;
-            public int LanguageCode { get; set; }
-        }
-
         private class ExtendedStdCultureInfo : StdCultureInfo
         {
             public ExtendedStdCultureInfo(int cId, int cLang)
