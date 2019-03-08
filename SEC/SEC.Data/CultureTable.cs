@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace SEC.Data
 {
     /// <summary>
-    /// This table centralizes every single <see cref="ICulture"/>.
+    /// This table centralizes every single <see cref="ICultureInfo"/>.
     /// </summary>
     [SqlTable("tCulture", Package = typeof(Package))]
     [Versions("1.0.0")]
@@ -17,7 +17,7 @@ namespace SEC.Data
         }
 
         /// <summary>
-        /// Creates a new <see cref="ICulture"/>.
+        /// Creates a new <see cref="ICultureInfo"/>.
         /// </summary>
         /// <param name="ctx">Current <see cref="ISqlCallContext"/>.</param>
         /// <param name="actorId">Creator's id.</param>
@@ -31,11 +31,11 @@ namespace SEC.Data
         );
 
         /// <summary>
-        /// Deletes an <see cref="ICulture"/>.
+        /// Deletes an <see cref="ICultureInfo"/>.
         /// </summary>
         /// <param name="ctx">Current <see cref="ISqlCallContext"/>.</param>
         /// <param name="actorId">Deletor's id.</param>
-        /// <param name="cultureId">See <see cref="ICulture.CultureId"/>.</param>
+        /// <param name="cultureId">See <see cref="ICultureInfo.CultureId"/>.</param>
         /// <returns></returns>
         [SqlProcedure("sCultureDelete")]
         public abstract Task<bool> DeleteCultureAsync(

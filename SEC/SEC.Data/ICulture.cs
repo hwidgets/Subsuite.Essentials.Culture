@@ -3,7 +3,7 @@
     /// <summary>
     /// Defines what a « culture » is.
     /// </summary>
-    public interface ICulture
+    public interface ICultureInfo
     {
         /// <summary>
         /// Culture database identifier (primary key).
@@ -12,7 +12,7 @@
 
         /// <summary>
         /// Culture <see cref="Data.Language.Code"/> or what
-        /// truly identifies the unique <see cref="ICulture"/>.
+        /// truly identifies the unique <see cref="ICultureInfo"/>.
         /// </summary>
         int LanguageCode { get; set; }
     }
